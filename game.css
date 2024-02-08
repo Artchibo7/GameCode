@@ -1,0 +1,330 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+img{
+    user-select: none;
+}
+
+#champDeBataille{
+    width: 100%;
+}
+
+.battleground{
+    background-color: green;
+    min-width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    position: absolute;
+    background-image: url(Images/castle-insidefinal.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.perso{
+    /* background-color: red; */
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: 308px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 130px;
+
+}
+
+.perso-container{
+    /* background-color: green; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: absolute;
+    /* left: 15px; */
+    width: 71px;
+    overflow: hidden;
+}
+
+#warrior{
+    /* background-color: blue; */
+    height: 90px;
+    position: relative;
+    right: 75px;
+    /* right: 150px; */
+}
+
+
+/* essayer de l'integrer si besoin 
+@keyframes perso-saut {
+    0%{
+        top: 30px;
+    }
+    25%{
+        top: 80px;
+    }
+    50%{
+        top: 130px;
+    }
+    100%{
+        top: 150px;
+    }
+    
+} */
+
+#enemie{
+    width: 80px;
+    aspect-ratio: 1/1;
+    display: flex;
+    position: relative;
+    left: 1080px;
+    transform: rotateY(180deg);
+    z-index: 99;
+}
+#enemie1{
+    width: 80px;
+    aspect-ratio: 1/1;
+    display: flex;
+    position: relative;
+    /* left: 1200px; */
+    top: 230px;
+    z-index: 99;
+    animation: 10000ms infinite enemie linear
+}
+@keyframes enemie{
+    0%{
+        left: 1205px;
+    }
+    100%{
+        left: -100px;
+    }   
+}
+
+
+
+
+
+#chaine1{
+    height: 5%;
+    display: flex;
+    position: absolute;
+    left: 149px;
+    top: 60px;
+}
+#chaine2{
+    height: 5%;
+    display: flex;
+    position: absolute;
+    left: 473px;
+    top: 60px;
+}
+#chaine3{
+    height: 5%;
+    display: flex;
+    position: absolute;
+    left: 797px;
+    top: 60px;
+}
+#chaine4{
+    height: 5%;
+    display: flex;
+    position: absolute;
+    left: 1124px;
+    top: 60px;
+}
+/* #chaine5{
+    height: 5%;
+    display: flex;
+    position: absolute;
+    left: 1079px;
+    top: 60px;
+} */
+
+#lanterne1{
+    height: 10%;
+    display: flex;
+    position: absolute;
+    left: 134px;
+    top: 85px;
+}
+#lanterne2{
+    height: 10%;
+    display: flex;
+    position: absolute;
+    left: 458px;
+    top: 85px;
+}
+#lanterne3{
+    height: 10%;
+    display: flex;
+    position: absolute;
+    left: 782px;
+    top: 85px;
+}
+#lanterne4{
+    height: 10%;
+    display: flex;
+    position: absolute;
+    left: 1109px;
+    top: 85px;
+}
+/* #lanterne5{
+    height: 10%;
+    display: flex;
+    position: absolute;
+    left: 1066.5px;
+    top: 85px;
+} */
+
+#citrouille{
+    height: 10%;
+    display: flex;
+    position: absolute;
+    left: 990px;
+    bottom: 205px;
+    opacity: 0.7;
+}
+
+#crane{
+    height: 50px;
+    position: relative;
+    left: 1035px;
+    top: 190px;  
+}
+
+#sarcofage{
+    width: 100px;
+    aspect-ratio: 1/1;
+    display: flex;
+    position: absolute;
+    left: 1190px;
+    bottom: 208px;
+    z-index: 100;
+}
+
+#webg{
+    width: 100px;
+    aspect-ratio: 1/1;
+    display: flex;
+    position: absolute;
+    left: 1200px;
+    bottom: 280px;
+}
+
+#webd{
+    width: 100px;
+    aspect-ratio: 1/1;
+    position: relative;
+    bottom: 130px;
+}
+
+#spiderweb{
+    height: 10%;
+    display: flex;
+    position: absolute;
+    left: 275px;
+    top: 220px;
+}
+
+#sword{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    position: relative;
+    aspect-ratio: 1/1;
+    left: 700px;
+    top: 80px;
+    transform: rotate(35deg);  
+}
+/* ======================================== */
+.candle{
+    width: 8px;
+    height: 5px;
+    background-color: #f08f5e;
+    position: absolute;  
+    left: 1017px;
+    top: 381px;
+}
+.flame{
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #69cf52, transparent);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10%;
+    animation: flicker 2s infinite alternate;
+}
+@keyframes flicker {
+    0%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* .bat{
+    height: 35px;
+    display: flex;
+    position: absolute;
+    left: 130px;
+    top: 14px;
+} */
+
+@keyframes bat{
+    0%{
+        left: 1300px;
+    }
+    100%{
+        left: -20px;
+    }   
+}
+@keyframes bat2{
+    0%{
+        top: 0;
+    }
+    10%{
+        top: 20px;
+    }
+    20%{
+       top: 40px;
+    }
+    30%{
+        top: 20px;
+    }
+    40%{
+        top: 10px;
+    }
+    50%{
+        top: 20px;
+    }
+    60%{
+        top: 30px;
+    }
+    80%{
+        top: 20px;
+    }
+    90%{
+        top: 30px;
+    } 
+}
+
+.batFly{
+    animation: 3s infinite bat linear, 3s infinite bat2 linear;
+}
+
+/* .sprite {
+    width: 50px;
+    height: 50px;
+    background-image: url('Images/Sprite.png');
+    animation: playSprite 1s steps(12) infinite;
+  }
+  
+  @keyframes playSprite {
+    from { background-position: 0px; }
+    to { background-position: -200px; }
+  } */
