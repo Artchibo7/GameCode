@@ -1,4 +1,4 @@
-class Image{
+class Bat{
     #src;
 
     constructor(){
@@ -34,4 +34,7 @@ class Image{
 }
 
 
-const myImage = new Image();
+const myImage1 = new Bat();
+const myImage2 = new Bat();
+const myImage3 = new Bat();
+

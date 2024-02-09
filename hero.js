@@ -1,5 +1,7 @@
 const warrior = document.getElementById("warrior");
 
+const audio = new Audio("audios/coup d'épée.mp3")
+
 console.dir(warrior);
 let count = 1;
 let warriorPosition = 75;
@@ -22,39 +24,34 @@ const moveWarrior = () => {
 
     // }, 600);
   }
-};
+}
+
 moveWarrior();
 window.addEventListener("click", (moveWarrior));
 
 
 
 
+const perso = document.getElementById("perso");
+let posX = 130;
 
+const movePerso = (direction) =>{
+    switch(direction){
+        case "q":
+            posX -= 10;
+            break;
+        case "d":
+            posX += 10;
+            break;
+        default:
+            break;
+    }
+    perso.style.left = posX + "px";
+}
 
-// POURQUOI TU NE MARCHE PLUUSSSS!!!
-
-// const perso = document.getElementsByClassName("perso-container");
-// let posX = 0;
-// let posY = 0;
-
-// const movePerso = (direction) =>{
-//     switch(direction){
-//         case "q":
-//             posX -= 10;
-//             break;
-//         case "d":
-//             posX += 10;
-//             break;
-//         default:
-//             break;
-//     }
-//     perso.style.left = posX + "px";
-//     perso.style.right = posX + "px";
-// }
-
-// document.addEventListener("keydown", function(event){
-//     movePerso(event.key);
-// });
+document.addEventListener("keydown", function(event){
+    movePerso(event.key);
+});
 
 
 
