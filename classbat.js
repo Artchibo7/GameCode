@@ -2,7 +2,7 @@ class Image{
     #src;
 
     constructor(){
-        this.src = 'images/bat.png';
+        this.src = 'Images/bat.png';
         this.addImageToDom();
         this.playSound();
     }
