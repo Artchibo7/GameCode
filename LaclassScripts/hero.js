@@ -1,7 +1,5 @@
 const warrior = document.getElementById("warrior");
 
-const audio = new Audio("audios/coup d'épée.mp3")
-
 console.dir(warrior);
 let count = 1;
 let warriorPosition = 75;
@@ -29,19 +27,22 @@ const moveWarrior = () => {
 moveWarrior();
 window.addEventListener("click", (moveWarrior));
 
-
-
+// <====================================================================> //
 
 const perso = document.getElementById("perso");
-let posX = 130;
+let posX = 100;
+let posY = 0;
+const bruitDePas = document.getElementById("bruitdepas");
 
 const movePerso = (direction) =>{
     switch(direction){
         case "q":
             posX -= 10;
+            playBruitDePas();
             break;
         case "d":
             posX += 10;
+            playBruitDePas();
             break;
         default:
             break;
@@ -49,6 +50,11 @@ const movePerso = (direction) =>{
     perso.style.left = posX + "px";
 }
 
+const playBruitDePas = () =>{
+  bruitDePas.pause();
+  bruitDePas.curentTime = 0;
+  bruitDePas.play();
+}
 document.addEventListener("keydown", function(event){
     movePerso(event.key);
 });
