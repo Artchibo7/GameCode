@@ -54,7 +54,6 @@ img{
     height: 90px;
     position: relative;
     right: 75px;
-    /* right: 150px; */
 }
 
 
@@ -85,28 +84,44 @@ img{
     z-index: 99;
 }
 #enemie1{
-    width: 80px;
-    aspect-ratio: 1/1;
-    display: flex;
+    /* width: 80px; */
+    /* aspect-ratio: 1/1; */
+    /* display: flex; */
     position: relative;
-    top: 230px;
+    left: 1195px;
+    top: 200px;
     z-index: 99;
-    animation: 10000ms infinite enemie linear
+    /* animation: 10000ms infinite skeleton linear */
 }
-@keyframes enemie{
+/* @keyframes enemie{
     0%{
         left: 1205px;
     }
     100%{
         left: -100px;
     }   
+} */
+.blocsprite{
+    /* background-color: #f08f5e; */
+    width: 100px;
+    height: 100px;
+    background-image: url(./Images/ghostFin.png);
+    animation: skeleton 10s steps(16) infinite;
+}
+@keyframes skeleton{
+    from{
+        background-position: 0px;
+        left: 1195px;
+    }
+
+    to 
+    {background-position: 1600px;
+        left:  -40px;
+    }
 }
 
 
-
-
-
-#chaine1{
+#chaine1, #chaine2, #chaine3, #chaine4{
     height: 5%;
     display: flex;
     position: absolute;
@@ -114,28 +129,16 @@ img{
     top: 60px;
 }
 #chaine2{
-    height: 5%;
-    display: flex;
-    position: absolute;
     left: 473px;
-    top: 60px;
 }
 #chaine3{
-    height: 5%;
-    display: flex;
-    position: absolute;
     left: 797px;
-    top: 60px;
 }
 #chaine4{
-    height: 5%;
-    display: flex;
-    position: absolute;
     left: 1124px;
-    top: 60px;
 }
 
-#lanterne1{
+#lanterne1, #lanterne2, #lanterne3, #lanterne4{
     height: 10%;
     display: flex;
     position: absolute;
@@ -143,25 +146,13 @@ img{
     top: 85px;
 }
 #lanterne2{
-    height: 10%;
-    display: flex;
-    position: absolute;
     left: 458px;
-    top: 85px;
 }
 #lanterne3{
-    height: 10%;
-    display: flex;
-    position: absolute;
     left: 782px;
-    top: 85px;
 }
 #lanterne4{
-    height: 10%;
-    display: flex;
-    position: absolute;
     left: 1109px;
-    top: 85px;
 }
 
 #citrouille{
@@ -220,32 +211,41 @@ img{
     display: flex;
     position: relative;
     aspect-ratio: 1/1;
-    left: 700px;
-    top: 80px;
+    left: 899px;
+    top: 60px;
     transform: rotate(35deg);  
 }
 /* ======================================== */
-#candle{
-    width: 0;
-    height: 0;
+#candle, #candle1, #candle2, #candle3, #candle4, #candle5{
+    width: 0px;
+    height: 0px;
     background-color: #f08f5e;
     position: absolute;  
     left: 192px;
     top: 365px;
 }
-#candle1{
-    width: 0;
-    height: 0;
-    background-color: #f08f5e;
-    position: absolute;  
-    left: 192px;
+#candle1{  
+    left: 168px;
     top: 365px;
+}
+#candle2,#candle3, #candle4, #candle5{ 
+    left: 163px;
+    top: 160px;
+}
+#candle3{  
+    left: 487px;
+}
+#candle4{ 
+    left: 810px;
+}
+#candle5{ 
+    left: 1140px;
 }
 
-.flame{
+.flame, .flame1{
     width: 10px;
     height: 10px;
-    background: radial-gradient(circle, #e1dcbb, transparent);
+    background: radial-gradient(circle, #fa0303fd, transparent);
     position: absolute;
     bottom: 100%;
     left: 50%;
@@ -253,10 +253,10 @@ img{
     border-radius: 50%;
     animation: flicker 2s infinite alternate;
 }
-.flame1{
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, #d41313, transparent);
+.flame2, .flame3, .flame4, .flame5{
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(circle, #c5722efd, transparent);
     position: absolute;
     bottom: 100%;
     left: 50%;

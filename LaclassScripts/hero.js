@@ -6,8 +6,8 @@ let warriorPosition = 75;
 warrior.style.right = `${warriorPosition}px`;
 const moveWarrior = () => {
   warrior.style.right = `${warriorPosition}px`;
-  console.log(warrior.style.right);
-  console.log(count);
+  // console.log(warrior.style.right);
+  // console.log(count);
   if (count < 9) {
     warriorPosition += 75;
     count += 1;

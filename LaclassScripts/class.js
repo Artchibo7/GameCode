@@ -7,7 +7,7 @@ class BarreDeVie{
         this.vie = vie;
         this.color = color;
         this.id = id;
-        this.#creerHTML();
+        this.creerHTML();
     }
 
     get vie(){
@@ -35,7 +35,7 @@ class BarreDeVie{
         return document.getElementById(this.id);
     }
 
-    #creerHTML(){
+    creerHTML(){
         let newDiv = document.createElement("div");
         newDiv.id = this.id;
         document.body.appendChild(newDiv);
