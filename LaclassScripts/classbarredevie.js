@@ -7,6 +7,7 @@ class BarreDeVie {
         this.vie = vie;
         this.color = color;
         this.id = id;
+        
         this.creerHTML();
     }
 

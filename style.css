@@ -32,7 +32,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 101;
+    z-index: 100;
     left: 100px;
 
 }
@@ -50,48 +50,13 @@ img{
     right: 75px;
 }
 
-
-/* essayer de l'integrer si besoin 
-@keyframes perso-saut {
-    0%{
-        top: 30px;
-    }
-    25%{
-        top: 80px;
-    }
-    50%{
-        top: 130px;
-    }
-    100%{
-        top: 150px;
-    }
-    
-} */
-
-#enemie{
-    width: 80px;
-    aspect-ratio: 1/1;
-    display: flex;
-    position: relative;
-    left: 1080px;
-    transform: rotateY(180deg);
-    z-index: 99;
-}
 #enemie1{
     position: relative;
     left: 1195px;
     top: 200px;
-    z-index: 99;
-    /* animation: 10000ms infinite skeleton linear */
+    z-index: 100;
 }
-/* @keyframes enemie{
-    0%{
-        left: 1205px;
-    }
-    100%{
-        left: -100px;
-    }   
-} */
+
 .blocsprite{
     width: 100px;
     height: 100px;
@@ -119,21 +84,6 @@ img{
     bottom: 208px;
     z-index: 100;
 }
-/* .coffin{
-    width: 240px;
-    height: 292px;
-    background-image: url(Images/coffin.png);
-    animation: coffin 2s steps(4) normal;
-}
-@keyframes coffin {
-    from{
-        background-position: 0;
-    }
-    to{
-        background-position: -1000px;
-    }
-} */
-
 
 #chaine1, #chaine2, #chaine3, #chaine4{
     height: 5%;
@@ -377,4 +327,5 @@ img{
     position: absolute;
     bottom: 100px;
     left: 500px;
+    z-index: 1000;
 }
