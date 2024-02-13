@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
 
-    <title>Tape moi si tu peux!!!</title>
+    <title>Castel VANNE IA</title>
   </head>
   <body>
     <div class="battleground">
@@ -66,8 +66,8 @@
           alt="une toile d'araignée"
         />
       </div>
-      <div id="sarcofage">
-        <img src="Images/sarcofage.png" alt="un sarcofage" />
+      <div id="sarcofage" class="coffin">
+        <img src="Images/sarcophage.png" alt="" />
       </div>
       <div class="candle" id="candle"></div>
       <div class="candle1" id="candle1"></div>
@@ -80,10 +80,20 @@
       </div>
       <audio id="batsound" src="audios/vol chauve-sourris.mp3" loop></audio>
       <audio id="bruitdepas" src="audios/bruitdepas.mp3"></audio>
+      <audio id="swordSound" src="audios/coup d'épée.mp3"></audio>
+      <div id="bouton">
+          <button id="regles">Afficher les règles du jeu</button>
+          <div id="container" style="display: none;">
+            <H2>Règles du jeu!!!</H2>
+            <p> 1: vous devez tuer tous les monstres qui vient de la droite</p>
+            <p> 2: vous pouvez utiliser 3 potions de vies par partie</p>
+          </div>
+      </div>
     </div>
     <script src="./LaclassScripts/candle.js"></script>
     <script src="./LaclassScripts/hero.js"></script>
-    <script src="./LaclassScripts/class.js"></script>
+    <script src="./LaclassScripts/classbarredevie.js"></script>
     <script src="./LaclassScripts/classbat.js"></script>
+    <script src="./LaclassScripts/bouton.js"></script>
   </body>
 </html>

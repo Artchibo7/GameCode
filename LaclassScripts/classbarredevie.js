@@ -1,4 +1,4 @@
-class BarreDeVie{
+class BarreDeVie {
     #vie;
     #color;
     #id;
@@ -44,7 +44,14 @@ class BarreDeVie{
 
         let barre = document.createElement("div");
         barre.id = "barre-" + this.id;
-        barre.style.border = "1px solid yellow";
-        barre.style.height = "10px";
+        barre.style.border = "5px solid yellow";
+        barre.style.height = "20px";
+        barre.style.width = "200px";
+        barre.style.backgroundColor = this.color;
+        barre.textContent = "Barre de vie";
+
+        newDiv.appendChild(barre);
     }
 }
+
+const barreDeVie = new BarreDeVie(100, "green", "vie1");
